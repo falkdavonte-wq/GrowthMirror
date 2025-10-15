@@ -8,21 +8,10 @@
   <meta name="description" content="GrowthMirror is your portal for vibrational alignment, conscious growth, and inner clarity." />
 </head>
 <body>
+  <!-- HERO -->
   <header class="hero">
     <div class="overlay">
-      <div class="brand-title-wrapper mirrors-distance">
-        <div class="mirror-side left">
-          <div class="mirror-surface">
-            <span class="mirror-phrase">Now Mirror</span>
-          </div>
-        </div>
-        <h2 class="brand-title">GrowthMirror</h2>
-        <div class="mirror-side right">
-          <div class="mirror-surface">
-            <span class="mirror-phrase">Next Mirror</span>
-          </div>
-        </div>
-      </div>
+      <h2 class="brand-title">GrowthMirror</h2>
       <h1 class="title">Reflect. Evolve. Transcend.</h1>
       <p class="subtitle">
         GrowthMirror is your personal portal to track vibrational alignment, conscious growth, and inner clarity.
@@ -31,18 +20,20 @@
     </div>
   </header>
 
+  <!-- FEATURES (sits right under hero) -->
+  <section id="features" class="features">
+    <h2>Unlock Your Infinite Potential</h2>
+    <div class="feature-grid">
+      <div class="feature"><span class="icon">⚡</span><h3>Daily Resonance Tracking</h3><p>Scan and elevate your daily vibrational state to align with your highest self.</p></div>
+      <div class="feature"><span class="icon">💎</span><h3>Mirror Mode Insights</h3><p>Receive intuitive guidance and reflection patterns from your personal GrowthMirror AI.</p></div>
+      <div class="feature"><span class="icon">📘</span><h3>Resonance Classroom</h3><p>Deepen your learning through structured teachings on frequencies, archetypes, and energy alignment.</p></div>
+      <div class="feature"><span class="icon">🪞</span><h3>Resonance Explorer</h3><p>Engage with quizzes and reflection modules to map your energetic journey in real time.</p></div>
+      <div class="feature"><span class="icon">🧭</span><h3>Personal Architect</h3><p>Build your ideal vibrational roadmap through intentions, habits, and conscious design.</p></div>
+    </div>
+  </section>
 
+  <!-- STEPS -->
   <section class="section steps">
-<section id="features" class="features">
-  <h2>Unlock Your Infinite Potential</h2>
-  <div class="feature-grid">
-    <div class="feature"><span class="icon">⚡</span><h3>Daily Resonance Tracking</h3><p>Scan and elevate your daily vibrational state to align with your highest self.</p></div>
-    <div class="feature"><span class="icon">💎</span><h3>Mirror Mode Insights</h3><p>Receive intuitive guidance and reflection patterns from your personal GrowthMirror AI.</p></div>
-    <div class="feature"><span class="icon">📘</span><h3>Resonance Classroom</h3><p>Deepen your learning through structured teachings on frequencies, archetypes, and energy alignment.</p></div>
-    <div class="feature"><span class="icon">🪞</span><h3>Resonance Explorer</h3><p>Engage with quizzes and reflection modules to map your energetic journey in real time.</p></div>
-    <div class="feature"><span class="icon">🧭</span><h3>Personal Architect</h3><p>Build your ideal vibrational roadmap through intentions, habits, and conscious design.</p></div>
-  </div>
-</section>
     <h2>Your Journey to Conscious Evolution</h2>
     <ol>
       <li><strong>Scan Your Resonance</strong> — begin each day with reflection and awareness.</li>
@@ -52,89 +43,43 @@
     </ol>
   </section>
 
+  <!-- CTA -->
   <section class="cta-section">
+<section id="our-story" class="our-story-section">
+  <h2>Our Story • Origins • Vision</h2>
+  <div class="story-content">
+    <p>GrowthMirror began as a seed of self-reflection — a single mirror moment that revealed how awareness shapes reality. From journaling by candlelight to building frequency-based tools, this path evolved into a living ecosystem for conscious growth, bridging technology and soul.</p>
+    <p>The <strong>Origin</strong> of GrowthMirror was guided by a question: <em>“What would happen if humanity could see its inner evolution reflected in real time?”</em> That inquiry became the heartbeat of this project — to harmonize digital innovation with vibrational alignment.</p>
+    <p>Our <strong>Vision</strong> is to create a global resonance network — one that empowers individuals to awaken, align, and embody their highest potential through awareness, reflection, and energetic calibration. Each interaction with GrowthMirror is a mirror moment — a reflection of the divine spark within.</p>
+  </div>
+</section>
     <h2>Start Your Conscious Journey Today</h2>
     <p>Your first step toward elevated clarity and alignment.</p>
     <a href="#" class="button large">Open Your GrowthMirror</a>
   </section>
 
-<footer class="footer">
-  <p>© 2025 GrowthMirror. All rights reserved.</p>
-  <div class="footer-links">
-    <a href="/privacy" target="_blank" rel="noopener">Privacy Policy</a>
-    <span class="divider">·</span>
-    <a href="/terms" target="_blank" rel="noopener">Terms of Use</a>
-  </div>
-</footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 GrowthMirror. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+      <span class="divider">·</span>
+      <a href="/terms" target="_blank" rel="noopener">Terms of Use</a>
+    </div>
+  </footer>
+
+  <!-- Smooth scroll only -->
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("scrollButton");
+    const target = document.querySelector("#features");
+    if (button && target) {
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  });
+  </script>
 </body>
 </html>
-<script>
-// Smooth scroll from hero button to features section
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.getElementById("scrollButton");
-  const target = document.querySelector("#features");
-
-  if (button && target) {
-    button.addEventListener("click", (e) => {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth" });
-    });
-  }
-});
-</script>
-<script>
-// Mirror-tilt reactive lighting
-document.addEventListener("mousemove", (e) => {
-  const title = document.querySelector(".brand-title");
-  if (!title) return;
-
-  const rect = title.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  const midX = rect.width / 2;
-  const midY = rect.height / 2;
-
-  const rotateY = ((x - midX) / midX) * 10;  // horizontal tilt
-  const rotateX = ((midY - y) / midY) * 10;  // vertical tilt
-
-  title.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-  title.style.textShadow = `${-rotateY * 1.5}px ${rotateX * 1.5}px 25px rgba(255,255,255,0.3)`;
-});
-
-// Ease back to neutral when mouse leaves window
-document.addEventListener("mouseleave", () => {
-  const title = document.querySelector(".brand-title");
-  if (title) {
-    title.style.transform = "rotateX(0) rotateY(0)";
-    title.style.textShadow = "0 0 20px rgba(255,255,255,0.15)";
-  }
-});
-</script>
-
-<section class="mission-section">
-  <div class="mission-container">
-    <div class="mission-left">
-      <h2 class="mission-heading">Our Origins</h2>
-      <p>
-        GrowthMirror was born from a deep desire to merge technology, consciousness, and authenticity. 
-        What began as a vision for reflective journaling evolved into a living platform for inner growth, 
-        frequency awareness, and human evolution. Each layer of this creation mirrors the collective journey 
-        of awakening — a call to remember who we truly are and the light we each carry.
-      </p>
-    </div>
-
-    <div class="mission-right">
-      <h2 class="mission-heading">Our Vision Ahead</h2>
-      <p>
-        We envision a global community aligned in resonance — where individuals, families, and organizations 
-        harmonize through self-awareness, emotional intelligence, and energetic education. GrowthMirror’s 
-        future initiatives aim to bring vibrational literacy into schools, wellness programs, and local 
-        communities, sparking a shift toward collective healing and conscious collaboration across the planet.
-      </p>
-    </div>
-  </div>
-</section>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-  });
-</script>
