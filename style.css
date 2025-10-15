@@ -107,3 +107,27 @@ footer nav a {
   text-decoration: none;
 }
 footer nav a:hover { color: #fff; }
+
+/* --- Enhanced Footer --- */
+.footer {
+  background: #0a0014;
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #bbb;
+}
+.footer-links {
+  margin-top: 0.5rem;
+}
+.footer-links a {
+  color: #ff946d;
+  text-decoration: none;
+  margin: 0 0.4rem;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+.footer-links .divider {
+  color: #666;
+}
