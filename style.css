@@ -172,3 +172,29 @@ html {
 .button {
   animation: buttonPulse 4.5s ease-in-out infinite;
 }
+
+/* --- Brand Title Animation --- */
+.brand-title {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff946d, #ffd5b2, #ff946d);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s linear infinite, fadeInBrand 1.2s ease-out;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes fadeInBrand {
+  0%   { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
