@@ -136,3 +136,39 @@ footer nav a:hover { color: #fff; }
 html {
   scroll-behavior: smooth;
 }
+
+/* --- Resonant Breathing Glow Animation --- */
+
+/* Headline glow (Reflect. Evolve. Transcend.) */
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255,255,255,0.1), 0 0 25px rgba(255,255,255,0.05);
+    opacity: 0.95;
+  }
+  50% {
+    text-shadow: 0 0 25px rgba(255,255,255,0.25), 0 0 60px rgba(255,255,255,0.2);
+    opacity: 1;
+  }
+}
+
+/* Apply the glow to the hero title */
+.hero .title {
+  animation: floatTitle 6s ease-in-out infinite, pulseGlow 5s ease-in-out infinite;
+}
+
+/* Button breathing glow */
+@keyframes buttonPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(240,80,50,0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(255,120,80,0.7);
+    transform: scale(1.05);
+  }
+}
+
+/* Apply it to the main hero button */
+.button {
+  animation: buttonPulse 4.5s ease-in-out infinite;
+}
