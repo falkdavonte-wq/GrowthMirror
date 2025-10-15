@@ -131,3 +131,8 @@ footer nav a:hover { color: #fff; }
 .footer-links .divider {
   color: #666;
 }
+
+/* --- Smooth Scroll Enhancements --- */
+html {
+  scroll-behavior: smooth;
+}
