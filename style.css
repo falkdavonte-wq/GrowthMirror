@@ -257,3 +257,370 @@ html {
     max-width: 100%;
   }
 }
+/* === GrowthMirror Feature Cards === */
+.features {
+  padding: 80px 0;
+  text-align: center;
+  background: linear-gradient(180deg, #0e0119 0%, #1b0530 100%);
+  color: #fff;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(153, 51, 255, 0.3), 0 0 40px rgba(255, 102, 204, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.feature .icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+/* === GrowthMirror Dynamic Feature Cards === */
+.features {
+  padding: 100px 0;
+  text-align: center;
+  background: radial-gradient(circle at top, #240046, #0e0119);
+  color: #fff;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.features h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(255, 102, 255, 0.4), 0 0 60px rgba(120, 115, 245, 0.3);
+  background: linear-gradient(145deg, rgba(255,255,255,0.15), rgba(120,115,245,0.1));
+}
+
+.feature .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* === Scroll Fade-In Animation for GrowthMirror Features === */
+
+.feature:nth-child(1) { transition-delay: 0.1s; }
+.feature:nth-child(2) { transition-delay: 0.25s; }
+.feature:nth-child(3) { transition-delay: 0.4s; }
+.feature:nth-child(4) { transition-delay: 0.55s; }
+.feature:nth-child(5) { transition-delay: 0.7s; }
+/* Ensure hidden until revealed */
+
+/* === GrowthMirror Phrase Bubbles === */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ff9ff3, #a29bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  animation: floatPulse 6s ease-in-out infinite;
+}
+
+  left: 5%;
+  background: linear-gradient(135deg, #7d5fff55, #f1c0e855);
+}
+
+  right: 5%;
+  background: linear-gradient(135deg, #ff9ff355, #a29bfe55);
+}
+
+@keyframes floatPulse {
+  0%, 100% { transform: translateY(-50%) scale(1); opacity: 0.9; }
+  50% { transform: translateY(-60%) scale(1.05); opacity: 1; }
+}
+/* === GrowthMirror Phrase Bubbles === */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #ff9ff3, #a29bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  animation: floatPulse 6s ease-in-out infinite;
+}
+
+  left: 5%;
+  background: linear-gradient(135deg, #7d5fff55, #f1c0e855);
+}
+
+  right: 5%;
+  background: linear-gradient(135deg, #ff9ff355, #a29bfe55);
+}
+
+@keyframes floatPulse {
+  0%, 100% { transform: translateY(-50%) scale(1); opacity: 0.9; }
+  50% { transform: translateY(-60%) scale(1.05); opacity: 1; }
+}
+/* === Corner-Mirrored Phrase Bubbles === */
+.brand-title-wrapper {
+  position: relative;
+  display: inline-block;
+}
+  position: absolute;
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(255,255,255,0.15);
+  white-space: nowrap;
+  animation: floatPulse 6s ease-in-out infinite;
+}
+  top: -20px;
+  left: -140px;
+  background: linear-gradient(135deg,#7d5fff66,#f1c0e866);
+}
+  top: -20px;
+  right: -140px;
+  background: linear-gradient(135deg,#ff9ff366,#a29bfe66);
+}
+@keyframes floatPulse {
+  0%,100% {transform: translateY(0) scale(1); opacity:.9;}
+  50% {transform: translateY(-6px) scale(1.05); opacity:1;}
+}
+/* === Inline Mirror Panels beside GrowthMirror === */
+.mirrors-inline {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1.5rem;
+  position:relative;
+  margin:24px auto;
+}
+
+  width:120px;
+  height:70px;
+  perspective:600px;
+  position:relative;
+}
+
+  width:100%;
+  height:100%;
+  border-radius:12px;
+  background:linear-gradient(145deg,rgba(255,255,255,0.1),rgba(150,150,255,0.05));
+  box-shadow:inset 0 0 20px rgba(255,255,255,0.08),0 0 25px rgba(180,180,255,0.15);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transform:rotateY(0deg);
+  transition:transform 2s ease-in-out;
+  animation:mirrorShimmer 8s ease-in-out infinite;
+}
+
+  font-size:0.85rem;
+  color:#e0dfff;
+  letter-spacing:0.5px;
+  text-shadow:0 0 6px rgba(255,255,255,0.4);
+}
+
+.brand-title {
+  font-size:3.8rem;
+  font-weight:900;
+  letter-spacing:1.5px;
+  background:linear-gradient(90deg,#ff9ff3,#a29bfe,#ff9ff3);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:brandGlow 10s linear infinite;
+}
+
+@keyframes mirrorShimmer {
+  0%,100% {transform:rotateY(0deg);}
+  50% {transform:rotateY(8deg);}
+}
+@keyframes brandGlow {
+  0%,100% {filter:drop-shadow(0 0 8px rgba(255,255,255,0.15));}
+  50% {filter:drop-shadow(0 0 20px rgba(170,120,255,0.35));}
+}
+/* === GrowthMirror Center Composition with Side Mirrors === */
+.mirrors-distance {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:4rem;
+  margin:40px auto;
+  flex-wrap:wrap;
+}
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:.5rem;
+}
+
+  width:110px;
+  height:140px;
+  border-radius:50%;
+  background:radial-gradient(circle at 30% 30%,rgba(255,255,255,0.25),rgba(150,150,255,0.1) 60%,rgba(255,255,255,0.05) 100%);
+  box-shadow:0 0 20px rgba(255,255,255,0.1),0 0 35px rgba(170,120,255,0.25);
+  border:1px solid rgba(255,255,255,0.15);
+  animation:mirrorGlow 8s ease-in-out infinite;
+}
+
+  font-size:.9rem;
+  color:#dcd9ff;
+  text-align:center;
+  max-width:150px;
+  line-height:1.3;
+  font-style:italic;
+  text-shadow:0 0 8px rgba(255,255,255,0.2);
+}
+
+.brand-title {
+  font-size:3.8rem;
+  font-weight:900;
+  letter-spacing:1.5px;
+  background:linear-gradient(90deg,#ff9ff3,#a29bfe,#ff9ff3);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:brandGlow 10s linear infinite;
+  text-align:center;
+}
+
+@keyframes mirrorGlow {
+  0%,100% {box-shadow:0 0 20px rgba(255,255,255,0.1),0 0 35px rgba(170,120,255,0.25);}
+  50% {box-shadow:0 0 30px rgba(255,255,255,0.25),0 0 50px rgba(170,120,255,0.4);}
+}
+@keyframes brandGlow {
+  0%,100% {filter:drop-shadow(0 0 8px rgba(255,255,255,0.15));}
+  50% {filter:drop-shadow(0 0 20px rgba(170,120,255,0.35));}
+}
+/* === GrowthMirror: side mirrors placed left/right of the title, with captions below === */
+.mirrors-distance{
+  display:flex; align-items:center; justify-content:center; gap:6rem;
+  margin:32px auto 28px; flex-wrap:wrap;
+}
+
+/* each side is a vertical stack: mirror picture + caption underneath */
+  display:flex; flex-direction:column; align-items:center; gap:.55rem;
+}
+
+/* “picture of a mirror” (CSS oval with glow + subtle shimmer) */
+  width:120px; height:150px; border-radius:50%;
+  background:
+    radial-gradient(35% 35% at 30% 30%, rgba(255,255,255,.35), rgba(255,255,255,.12) 60%, rgba(255,255,255,.06) 100%),
+    radial-gradient(80% 80% at 70% 70%, rgba(170,120,255,.15), rgba(120,115,245,.08) 60%, rgba(0,0,0,.0) 100%);
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:
+    inset 0 0 18px rgba(255,255,255,.18),
+    0 0 28px rgba(170,120,255,.28);
+  position:relative;
+  overflow:hidden;
+}
+
+/* moving light sweep for “glass” feel */
+  content:"";
+  position:absolute; top:-20%; left:-60%;
+  width:70%; height:140%;
+  transform:rotate(20deg);
+  background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.35) 50%, rgba(255,255,255,0) 100%);
+  filter:blur(4px);
+  animation:mirrorSweep 6.5s ease-in-out infinite;
+}
+
+@keyframes mirrorSweep{
+  0% { left:-60%; opacity:.0; }
+  20% { opacity:.55; }
+  50% { left:120%; opacity:.2; }
+  100% { left:120%; opacity:0; }
+}
+
+/* caption under each mirror */
+  display:block;
+  font-size:.9rem; line-height:1.2; text-align:center;
+  color:#e6e3ff; font-style:italic; letter-spacing:.2px;
+  text-shadow:0 0 8px rgba(255,255,255,.18);
+  max-width:140px;
+}
+
+/* keep the brand title proud */
+.brand-title{
+  font-size:3.8rem; font-weight:900; letter-spacing:1.5px;
+}
+
+/* responsive: pull mirrors in a bit on small screens */
+@media (max-width: 720px){
+  .mirrors-distance{ gap:2rem; }
+  .brand-title{ font-size:3rem; }
+}
