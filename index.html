@@ -69,3 +69,31 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 </script>
+<script>
+// Mirror-tilt reactive lighting
+document.addEventListener("mousemove", (e) => {
+  const title = document.querySelector(".brand-title");
+  if (!title) return;
+
+  const rect = title.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  const midX = rect.width / 2;
+  const midY = rect.height / 2;
+
+  const rotateY = ((x - midX) / midX) * 10;  // horizontal tilt
+  const rotateX = ((midY - y) / midY) * 10;  // vertical tilt
+
+  title.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  title.style.textShadow = `${-rotateY * 1.5}px ${rotateX * 1.5}px 25px rgba(255,255,255,0.3)`;
+});
+
+// Ease back to neutral when mouse leaves window
+document.addEventListener("mouseleave", () => {
+  const title = document.querySelector(".brand-title");
+  if (title) {
+    title.style.transform = "rotateX(0) rotateY(0)";
+    title.style.textShadow = "0 0 20px rgba(255,255,255,0.15)";
+  }
+});
+</script>

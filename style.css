@@ -178,7 +178,7 @@ html {
   font-size: 4rem;
   font-weight: 900;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  
   background: linear-gradient(90deg, #ff946d, #ffd5b2, #ff946d);
   background-size: 200% auto;
   color: transparent;
@@ -197,4 +197,14 @@ html {
 @keyframes fadeInBrand {
   0%   { opacity: 0; transform: translateY(-30px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Interactive Mirror-Tilt Effect --- */
+.brand-title {
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.25s ease, text-shadow 0.25s ease;
+}
+.brand-title:hover {
+  cursor: default;
 }
