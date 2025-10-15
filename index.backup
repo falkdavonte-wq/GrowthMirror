@@ -46,11 +46,11 @@
   <!-- CTA -->
   <section class="cta-section">
 <section id="our-story" class="our-story-section">
-  <h2 class="our-story-title">Our Story</h2>
+  <h2>Our Story • Origins • Vision</h2>
   <div class="story-content">
-    <p>GrowthMirror was born from a moment of reflection — a realization that awareness itself is the key to transformation. What began as a simple journaling practice evolved into a living mirror for consciousness, where every reflection reveals new layers of clarity, truth, and alignment.</p>
-    <p>Our journey bridges the energetic and the tangible — blending intuitive design, sound frequency, and mindful technology into one seamless experience. GrowthMirror exists to help you see yourself clearly, to recognize your own vibrational rhythm, and to embody your highest state of being.</p>
-    <p>Every interaction, every prompt, and every resonance scan is more than data — it’s a reflection of your evolution. This is not just an app; it’s a portal into the frequency of your becoming.</p>
+    <p>GrowthMirror began as a seed of self-reflection — a single mirror moment that revealed how awareness shapes reality. From journaling by candlelight to building frequency-based tools, this path evolved into a living ecosystem for conscious growth, bridging technology and soul.</p>
+    <p>The <strong>Origin</strong> of GrowthMirror was guided by a question: <em>“What would happen if humanity could see its inner evolution reflected in real time?”</em> That inquiry became the heartbeat of this project — to harmonize digital innovation with vibrational alignment.</p>
+    <p>Our <strong>Vision</strong> is to create a global resonance network — one that empowers individuals to awaken, align, and embody their highest potential through awareness, reflection, and energetic calibration. Each interaction with GrowthMirror is a mirror moment — a reflection of the divine spark within.</p>
   </div>
 </section>
     <h2>Start Your Conscious Journey Today</h2>
@@ -83,3 +83,28 @@
   </script>
 </body>
 </html>
+
+<!-- MISSION & VISION -->
+<section class="mission-section">
+  <div class="mission-container">
+    <div class="mission-left">
+      <h2 class="mission-heading">Our Origins</h2>
+      <p>
+        GrowthMirror was born from a deep desire to merge technology, consciousness, and authenticity.
+        What began as a vision for reflective journaling evolved into a living platform for inner growth,
+        frequency awareness, and human evolution. Each layer of this creation mirrors the collective journey
+        of awakening — a call to remember who we truly are and the light we each carry.
+      </p>
+    </div>
+    <div class="mission-right">
+      <h2 class="mission-heading">Our Vision Ahead</h2>
+      <p>
+        We envision a global community aligned in resonance — where individuals, families, and organizations
+        harmonize through self-awareness, emotional intelligence, and energetic education. GrowthMirror’s
+        future initiatives aim to bring vibrational literacy into schools, wellness programs, and local
+        communities, sparking a shift toward collective healing and conscious collaboration across the planet.
+      </p>
+    </div>
+  </div>
+</section>
+
