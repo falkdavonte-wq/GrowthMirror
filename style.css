@@ -823,3 +823,59 @@ html {
     font-size: 1.15rem;
   }
 }
+/* === GrowthMirror CTA Glow Animation === */
+.button.large {
+  background: linear-gradient(90deg, #8a2be2, #ff6ec4);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 36px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 110, 196, 0.4);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  animation: buttonGlow 4s ease-in-out infinite;
+}
+
+.button.large:hover {
+  transform: translateY(-3px) scale(1.02);
+  background: linear-gradient(90deg, #9b4dff, #ff82d2);
+  box-shadow: 0 0 25px rgba(255, 110, 196, 0.7), 0 0 50px rgba(138, 43, 226, 0.4);
+}
+
+/* Subtle breathing effect */
+@keyframes buttonGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 110, 196, 0.3), 0 0 20px rgba(138, 43, 226, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 110, 196, 0.5), 0 0 40px rgba(138, 43, 226, 0.4);
+  }
+}
+
+/* Optional pulse halo */
+.button.large::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background: radial-gradient(circle, rgba(255, 110, 196, 0.2), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.button.large:hover::after {
+  opacity: 1;
+  animation: pulseGlow 1.8s ease-out infinite;
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.6; }
+}
